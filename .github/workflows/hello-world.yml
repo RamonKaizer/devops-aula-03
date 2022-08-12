@@ -2,18 +2,17 @@ name: Hello World
 
 on:
   push:
-    branches: ["main"]
+    branches: [ "main" ]
   pull_request:
-    branches: ["main"] 
+    branches: [ "main" ]
   workflow_dispatch:
   
 jobs:
   SayHello:
     runs-on: ubuntu-latest
-      
-    
+  
     steps:
-      - uses: actions/checkout@v3
-      
-      - name: Say it
-        run: echo Hello, world!!!!
+     - uses: actions/checkout@v3
+     
+     - name: Say it
+       run: echo Hello, world!
